@@ -1,0 +1,170 @@
+body {
+	background: #111;
+	background-attachment: fixed;
+	background-size: cover;
+  color: #f9f9f9;
+}
+
+
+:root{
+	--pink: #ff60b4;
+  --blue: #72efff; 
+}
+
+ A {text-decoration: none;}
+
+#out-all {position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; display: flex; align-items: center; justify-content: center;}
+
+#f1 {position: absolute; width: 600px; height: 400px; display: flex; align-items: center; justify-content: center; flex-direction: column; background: #111;}
+.decidir {display: flex; align-items: center; justify-content: center;}
+.si, .no, .weno, .dale, .salu, .copy, #f13 a, span.go, .carta {font: 25px 'VT323', monospace; margin: 10px; opacity: 0;
+   animation-name: visible;
+  animation-duration: 1s; 
+animation-delay: 3.5s;
+    animation-fill-mode: forwards; cursor: pointer; color: #f9f9f9;
+}
+
+.rega, .ojo, .afi, .anillo, .marry, .meme, .meme2, .yes {font: 25px 'VT323', monospace; margin: 10px; opacity: 0;
+   animation-name: visible;
+  animation-duration: 1s; 
+animation-delay: 7s;
+    animation-fill-mode: forwards; cursor: pointer; text-align: center;
+}
+
+#f2, #f3, #f4, #f5, #f6 {position: absolute; width: 600px; height: 400px; display: flex; align-items: center; justify-content: center; flex-direction: column; display: none;} 
+
+#f7 {position: absolute; width: min(850px, calc(100vw - 24px)); height: min(550px, calc(100vh - 24px)); overflow: hidden; border: 3px solid #392637; background: radial-gradient(ellipse at 50% 30%, #463354 0, #211d37 42%, #111322 100%); box-shadow: 0 0 0 5px #09090d, 0 18px 70px #000b; display: none; align-items: center; justify-content: center; flex-direction: column;}
+#f7::before {content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .8; background: radial-gradient(circle at 12% 20%, #fff 0 1px, transparent 2px), radial-gradient(circle at 82% 25%, #f8d78e 0 2px, transparent 3px), radial-gradient(circle at 71% 12%, #fff 0 1px, transparent 2px), radial-gradient(ellipse at 50% 100%, #34513a 0 17%, transparent 17.5%), radial-gradient(ellipse at 10% 100%, #253d32 0 22%, transparent 22.5%), radial-gradient(ellipse at 95% 100%, #2b4635 0 24%, transparent 24.5%);}
+#f7::after {content: ""; position: absolute; z-index: 0; width: 68px; height: 68px; top: 44px; right: 12%; border-radius: 50%; background: #f6dba2; box-shadow: 0 0 45px #f4d18b88, 0 0 0 12px #f4d18b12;}
+
+#f8, #f9 {position: absolute; z-index: 2; bottom: 178px; left: 8%; right: 8%; display: none; align-items: center; justify-content: center; flex-direction: column; text-align: center;}
+
+#f10 {position: absolute; z-index: 2; bottom: 50px; left: 8%; right: 8%; height: 130px; display: none; align-items: center; justify-content: center;}
+.box {position: relative; width: 108px; height: 82px; margin: 18px; border: 4px solid #6b3b38; border-radius: 8px 8px 12px 12px; background: linear-gradient(90deg, transparent 44%, #f2c56a 45% 53%, transparent 54%), linear-gradient(#a65d42 0 24%, #723b39 24% 100%); box-shadow: inset 0 0 0 3px #d59857, 0 9px 0 #382532, 0 13px 20px #0008; cursor: pointer; transition: transform .2s, filter .2s;}
+.box::before {content: ""; position: absolute; left: -7px; right: -7px; top: -18px; height: 25px; border: 4px solid #754440; border-radius: 9px 9px 4px 4px; background: linear-gradient(90deg, transparent 43%, #f2c56a 44% 55%, transparent 56%), linear-gradient(#d08a50, #8b4b3b); box-shadow: inset 0 0 0 2px #e6ad64;}
+.box::after {content: ""; position: absolute; left: 42px; top: 29px; width: 14px; height: 18px; border: 2px solid #ffdc83; border-radius: 4px; background: #e5b54d; box-shadow: 0 0 12px #ffe08b88;}
+.box:hover {transform: translateY(-9px); filter: brightness(1.2);}
+
+#f11 {position: absolute; z-index: 2; top: 28px; left: 7%; right: 7%; display: none; flex-direction: column; align-items: center; gap: 12px; text-align: center;}
+#f11 h3, #f11 h2 {width: auto; max-width: 100%; height: auto; margin: 0; overflow: visible; white-space: normal; border: 0; animation: none; font-size: clamp(19px, 2.8vw, 26px); line-height: 1.2;}
+
+#f12 {position: absolute; z-index: 4; top: 0px; bottom: 0px; right: 0px; left: 0px; background: #111; display: none; align-items: center; justify-content: center; flex-direction: column;}
+
+#f14 {box-sizing: border-box; position: absolute; inset: 0; z-index: 3; width: 100%; height: 100%; overflow-y: auto; padding: clamp(24px, 7vw, 80px); background: #111; font: clamp(21px, 2.3vw, 26px)/1.45 'VT323', monospace; text-align: left; display: none; overflow-wrap: anywhere; scrollbar-gutter: stable;}
+#f14 .carta {position: static; display: block; width: fit-content; max-width: 100%; margin: 24px auto 0; padding: 12px 18px; border: 1px solid #ff60b4; background: #111; line-height: 1.2; text-align: center;}
+#f15 {position: absolute; z-index: 4; inset: 0; overflow-y: auto; box-sizing: border-box; background: #111; font: 26px 'VT323', monospace; display: none;}
+#f16, #f17 {position: absolute; inset: 0; box-sizing: border-box; min-height: 100%; padding: 24px; display: none; align-items: center; justify-content: center; flex-direction: column; gap: 16px; text-align: center;}
+#f16 h3, #f16 h2, #f17 h3, #f17 h2 {width: auto; max-width: 100%; height: auto; margin: 0; overflow: visible; white-space: normal; border: 0; animation: none; line-height: 1.2; text-align: center;}
+#f16 h3, #f17 h3 {font-size: clamp(22px, 3vw, 30px);}
+#f16 h2, #f17 h2 {font-size: clamp(20px, 2.6vw, 26px);}
+.ring {position: relative; width: 110px; height: 110px; margin: 10px; border: 12px solid #f1cb65; border-radius: 50%; background: radial-gradient(circle, #111 54%, transparent 57%); box-shadow: 0 0 20px #f5ce6c77, inset 0 0 9px #fff3; transform: rotate(-25deg);}
+.ring::before {content: ""; position: absolute; width: 29px; height: 29px; top: -25px; left: 27px; transform: rotate(45deg); border: 3px solid #fff0b0; border-radius: 7px 7px 3px 7px; background: linear-gradient(135deg, #fff8cc, #de9f48 70%); box-shadow: 0 0 15px #ffda7a;}
+.ichigo {display: grid; place-items: center; width: 130px; height: 130px; margin: 8px; border: 3px solid #d798a9; border-radius: 50%; background: url("karen.jpg") center 35% / cover no-repeat; box-shadow: 0 0 24px #d77f9b66;}
+
+#f18 {position: absolute; z-index: 4; top: 0px; bottom: 0px; right: 0px; left: 0px; background: #111; display: none;}
+#f19, #f20, #f21, #f22 {position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px; background: #111; display: none; align-items: center; justify-content: center; flex-direction: column;}
+#f21 {box-sizing: border-box; gap: 18px; padding: 28px; overflow-y: auto;}
+#f21 h3, #f21 h2 {width: auto; max-width: 100%; height: auto; margin: 0; overflow: visible; white-space: normal; border: 0; animation: none; line-height: 1.2; text-align: center;}
+#f21 h3 {font-size: clamp(24px, 3vw, 30px);}
+#f21 h2 {font-size: clamp(22px, 2.8vw, 30px);}
+#f21 .decidir {max-width: 100%; flex-wrap: wrap; gap: 10px 24px;}
+#f21 .yes {max-width: 100%; margin: 0; line-height: 1.2; text-align: center;}
+#f22 {box-sizing: border-box; overflow-y: auto; padding: clamp(24px, 7vw, 64px); font: clamp(21px, 2.4vw, 26px)/1.5 'VT323', monospace; text-align: left; overflow-wrap: anywhere;}
+#f13 {width: min(90%, 700px); text-align: center;}
+#f13 h1 {width: auto; max-width: 100%; height: auto; overflow: visible; white-space: normal; border: 0; animation: none; line-height: 1.15;}
+#f13 a, #f13 .go {display: block; opacity: 1; animation: none; line-height: 1.2;}
+h1 {
+  overflow: hidden; 
+  border-right: .15em solid #fff; 
+  color: #fff;
+  white-space: nowrap;  
+  margin: 0 auto; 
+  letter-spacing: .03em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+  font: 30px 'VT323', monospace;
+}
+h3 {
+  overflow: hidden; 
+  border-right: .15em solid transparent; 
+  color: #fff;
+  white-space: nowrap;  
+  margin: 0 auto; 
+  letter-spacing: .03em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-start;
+  font: 30px 'VT323', monospace;
+}
+
+
+h2 {
+  overflow: hidden; 
+  border-right: .15em solid transparent; 
+  color: #fff;
+  white-space: nowrap;  
+  margin: 0 auto; 
+  letter-spacing: .03em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+  font: 30px 'VT323', monospace;
+  animation-delay: 3.5s; width: 0px; animation-fill-mode: forwards; text-align: center;
+}
+
+.img1 {position: relative; z-index: 1; display: grid; place-items: center; width: 150px; height: 150px; margin-bottom: 12px; border: 3px solid #d798a9; border-radius: 50%; background: url("karen.jpg") center 35% / cover no-repeat; box-shadow: 0 0 30px #d77f9b77;}
+
+#ico {position: absolute; z-index: 1; bottom: 12px; left: 6%; width: 90px; height: 90px; border: 3px solid #d798a9; border-radius: 50%; object-fit: cover; object-position: center 35%; box-shadow: 0 0 24px #d77f9b66, 0 5px 8px #0008;}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 105% }
+}
+
+@keyframes visible {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #fff }
+}
+
+@media (max-width: 600px) {
+  #f7 {height: min(550px, calc(100vh - 16px));}
+  #f6 h2 {max-width: 90%; white-space: normal;}
+  #f8, #f9 {bottom: 152px; left: 4%; right: 4%;}
+  #f8 h1, #f9 h1 {width: auto; max-width: 100%; height: auto; overflow: visible; white-space: normal; border: 0; animation: none; line-height: 1.15;}
+  #f10 {left: 2%; right: 2%; bottom: 35px; height: 100px;}
+  .box {width: 70px; height: 62px; margin: 10px;}
+  .box::before {top: -15px; height: 21px;}
+  .box::after {left: 23px; top: 20px;}
+  #f11 {top: 24px; left: 5%; right: 5%; gap: 10px;}
+  #f11 h3, #f11 h2 {font-size: 18px;}
+  #ico {width: 60px; height: 60px;}
+  #f14 {padding: 22px 20px; font-size: 21px; line-height: 1.4;}
+  #f15 {font-size: 22px;}
+  #f16, #f17 {padding: 18px; gap: 12px;}
+  #f21 {padding: 20px 16px; gap: 14px;}
+  #f21 h2 {font-size: 23px;}
+  #f21 .decidir {flex-direction: column; gap: 12px;}
+  #f22 {padding: 24px 20px; font-size: 21px; line-height: 1.45;}
+  .ring {width: 86px; height: 86px; border-width: 10px;}
+  .ring::before {width: 24px; height: 24px; top: -21px; left: 20px;}
+  .ichigo {width: 105px; height: 105px;}
+  .marry, .anillo {max-width: 95%; line-height: 1.2;}
+}
+
+@media (max-height: 620px) {
+  #f7 {height: calc(100vh - 16px);}
+  #f11 {top: 16px;}
+  #f8, #f9 {bottom: 150px;}
+  #f10 {bottom: 22px;}
+  .img1 {width: 110px; height: 110px;}
+  #f16, #f17 {justify-content: flex-start; overflow-y: auto;}
+  .ring {width: 74px; height: 74px; flex: 0 0 auto;}
+  .ichigo {width: 84px; height: 84px; flex: 0 0 auto;}
+}
